@@ -315,6 +315,7 @@ h1,h2,h3,p{margin:0}
       <a href="#results" style="color:var(--muted)" style-hover="color:var(--accent-t)">Results</a>
       <a href="#pricing" style="color:var(--muted)" style-hover="color:var(--accent-t)">Pricing</a>
       <a href="#faq" style="color:var(--muted)" style-hover="color:var(--accent-t)">FAQ</a>
+      <a href="/word2vec/" style="color:var(--accent-t);font-weight:600" style-hover="color:var(--text)">Word2Vec Lab</a>
     </nav>
     </sc-if>
     <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}"><div style="flex:1"></div></sc-if>
@@ -854,7 +855,7 @@ class Component extends DCLogic {
       toggleTheme: () => { const th = s.theme === 'dark' ? 'light' : 'dark'; try { localStorage.setItem('steadyline-theme', th); } catch (e) {} this.setState({ theme: th }); },
       wide: s.w >= 560, themeRowLabel: s.theme === 'dark' ? '\u2600  Switch to light mode' : '\u263e  Switch to dark mode',
       ctaLabel: s.w < 560 ? 'Book a Review' : 'Book a Free Workflow Review', heroCols: s.w < 560 ? '1fr' : '1fr 72px 1fr',
-      navLinks: [['How It Works', '#how'], ['Who We Help', '#who'], ['Results', '#results'], ['Pricing', '#pricing'], ['FAQ', '#faq']].map(([t, h]) => ({ t, h }))
+      navLinks: [['How It Works', '#how'], ['Who We Help', '#who'], ['Results', '#results'], ['Pricing', '#pricing'], ['FAQ', '#faq'], ['Word2Vec Lab', '/word2vec/']].map(([t, h]) => ({ t, h }))
     };
   }
   renderVals() {
