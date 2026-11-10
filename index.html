@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html><head><script>window.__resources = {"hero_photo": "assets/hero_photo-b678345e.jpg", "solution_whiteboard": "assets/solution_whiteboard-eaee7b43.jpg", "cta_bg": "assets/cta_bg-4ac4507e.jpg", "video_thumb": "assets/video_thumb-fe78fac5.jpg", "problem_desk": "assets/problem_desk-48235603.jpg", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react.production.min-0731c876.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom.production.min-11a49634.js"};</script>
+<meta charset="utf-8">
+
+
+
+
+
+
+
+<title>Steadyline | AI &amp; Workflow Consulting for Small Teams</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/app-281bf1f6.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-fffa0dbe.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-7d091efb.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-05c966ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-d8e60228.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-a166f009.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-0c719f4e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-6667551a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-7b480bbc.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font-ffd81d19.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-05c966ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-d8e60228.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-a166f009.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-0c719f4e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-6667551a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-7b480bbc.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/font-ffd81d19.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-05c966ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-d8e60228.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-a166f009.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-0c719f4e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-6667551a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-7b480bbc.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/font-ffd81d19.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-05c966ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-d8e60228.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-a166f009.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-0c719f4e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-6667551a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-7b480bbc.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/font-ffd81d19.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root{--bg:#fff;--card:#fff;--surface:#F1F5F9;--surface2:#F8FAFC;--text:#0F1E3A;--muted:#475569;--muted2:#64748B;--border:#E2E8F0;--input:#CBD5E1;--accent-t:#0F766E;--warn-t:#B45309;--err-t:#DC2626;--header:rgba(255,255,255,.86);--glass:rgba(255,255,255,.58);--glass-strong:rgba(255,255,255,.78);--glass-border:rgba(255,255,255,.75);--photo-tint:linear-gradient(135deg,rgba(15,118,110,.18),rgba(99,102,241,.12));--gtext:linear-gradient(100deg,#0F766E 0%,#0F766E 20%,#2563EB 60%,#6366F1 100%)}
+:root[data-theme=dark]{--bg:#0F1E3A;--card:#16284A;--surface:#132440;--surface2:#122240;--text:#F1F5F9;--muted:#CBD5E1;--muted2:#94A3B8;--border:#24365A;--input:#36507A;--accent-t:#5EEAD4;--warn-t:#FBBF24;--err-t:#F87171;--header:rgba(15,30,58,.86);--glass:rgba(15,30,58,.52);--glass-strong:rgba(15,30,58,.72);--glass-border:rgba(255,255,255,.16);--photo-tint:linear-gradient(135deg,rgba(15,30,58,.55),rgba(49,46,129,.45));--gtext:linear-gradient(100deg,#5EEAD4 0%,#38BDF8 45%,#A78BFA 80%,#FBBF24 100%)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+a{color:var(--accent-t);text-decoration:none}a:hover{color:var(--accent-t);text-decoration:underline}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+input[type=range]{accent-color:#14B8A6;width:100%;height:28px}
+:focus-visible{outline:3px solid #3B82F6;outline-offset:2px}
+h1,h2,h3,p{margin:0}
+@keyframes slPop{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script src="assets/app-6d6876e6.js"></script>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:1000;background:var(--header);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)"><div style="height:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></div>
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(16px,3vw,32px);height:clamp(60px,6vw,72px);display:flex;align-items:center;gap:clamp(10px,2vw,28px)">
+    <a href="#top" aria-label="Steadyline AI &amp; Workflow Consulting home" style="display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;min-width:0;flex:0 1 auto">
+      <svg width="38" height="38" sc-camel-view-box="0 0 48 48" fill="none" aria-hidden="true" style="flex:none"><defs><linearGradient id="sl-hdr" sc-camel-gradient-units="userSpaceOnUse" x1="4" y1="6" x2="44" y2="42"><stop offset="0" stop-color="#0F766E"></stop><stop offset=".3" stop-color="#14B8A6"></stop><stop offset=".55" stop-color="#3B82F6"></stop><stop offset=".8" stop-color="#6366F1"></stop><stop offset="1" stop-color="#A78BFA"></stop></linearGradient></defs><path d="M9 11 C17 11 17 24 25 24 M6 24 H25 M9 37 C17 37 17 24 25 24 M25 24 H35" stroke="url(#sl-hdr)" stroke-width="3.2" stroke-linecap="round"></path><circle cx="9" cy="11" r="3" fill="#0F766E"></circle><circle cx="6" cy="24" r="3" fill="#14B8A6"></circle><circle cx="9" cy="37" r="3" fill="#3B82F6"></circle><circle cx="40" cy="24" r="5" fill="#F59E0B"></circle></svg>
+      <span style="display:flex;flex-direction:column;gap:1px"><span style="font-family:'DM Serif Display',serif;font-size:23px;line-height:1">Steadyline</span><sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span style="font-size:8.5px;font-weight:600;letter-spacing:.22em;color:var(--muted2);white-space:nowrap">AI &amp; WORKFLOW CONSULTING</span></sc-if></span>
+    </a>
+    <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+    <nav style="display:flex;gap:28px;flex:1;min-width:0;font-size:15px;font-weight:500">
+      <a href="#how" style="color:var(--muted)" style-hover="color:var(--accent-t)">How It Works</a>
+      <a href="#who" style="color:var(--muted)" style-hover="color:var(--accent-t)">Who We Help</a>
+      <a href="#results" style="color:var(--muted)" style-hover="color:var(--accent-t)">Results</a>
+      <a href="#pricing" style="color:var(--muted)" style-hover="color:var(--accent-t)">Pricing</a>
+      <a href="#faq" style="color:var(--muted)" style-hover="color:var(--accent-t)">FAQ</a>
+    </nav>
+    </sc-if>
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}"><div style="flex:1"></div></sc-if>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><button sc-camel-on-click="{{ toggleTheme }}" aria-label="Toggle dark mode" style="flex:none;width:44px;height:44px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:18px;cursor:pointer">{{ themeIcon }}</button></sc-if>
+    <a href="#book" style="background:#0F766E;color:#fff;padding:12px 18px;border-radius:8px;font-weight:600;font-size:15px;white-space:nowrap;text-decoration:none;min-height:44px;display:flex;align-items:center" style-hover="background:#0B5F58;box-shadow:0 8px 24px rgba(245,158,11,.25);transform:translateY(-2px)">{{ ctaLabel }}</a>
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}"><button sc-camel-on-click="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuOpen }}" style="flex:none;width:44px;height:44px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:20px;cursor:pointer">{{ menuIcon }}</button></sc-if>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav style="display:flex;flex-direction:column;padding:4px 20px 20px;border-top:1px solid var(--border);background:var(--card)">
+      <sc-for list="{{ navLinks }}" as="n"><a href="{{ n.h }}" sc-camel-on-click="{{ closeMenu }}" style="padding:14px 0;border-bottom:1px solid var(--border);color:var(--text);font-size:17px;font-weight:500">{{ n.t }}</a></sc-for>
+      <button sc-camel-on-click="{{ toggleTheme }}" style="margin-top:14px;height:48px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text);font:600 15px Inter,sans-serif;cursor:pointer">{{ themeRowLabel }}</button>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="top">
+<section style="position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(15,118,110,.18),rgba(56,189,248,.14) 38%,rgba(99,102,241,.14) 68%,rgba(245,158,11,.18))">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,8vw,96px) clamp(20px,4vw,32px) clamp(56px,8vw,88px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:56px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span style="align-self:flex-start;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;color:var(--accent-t)"><span style="width:8px;height:8px;border-radius:50%;background:#14B8A6"></span>Built for small teams wearing a lot of hats</span>
+      <h1 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(40px,5.2vw,64px);line-height:1.08;letter-spacing:-.01em;text-wrap:balance;background:var(--gtext);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:4px">{{ headline }}</h1>
+      <p style="font-size:19px;line-height:1.6;color:var(--muted);max-width:560px;text-wrap:pretty">We organize your scattered information, automate repetitive paperwork, and make follow-ups happen on their own, so nothing falls through the cracks. Real results in 30 days.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="#book" style="background:#0F766E;color:#fff;padding:16px 28px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;min-height:52px;display:flex;align-items:center" style-hover="background:#0B5F58;box-shadow:0 8px 24px rgba(245,158,11,.3);transform:translateY(-2px)">Book a Free Workflow Review</a>
+        <a href="#demo" style="border:2px solid var(--accent-t);color:var(--accent-t);padding:14px 26px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;display:flex;align-items:center" style-hover="background:rgba(15,118,110,.08)">See How It Works</a>
+      </div>
+      <p style="font-size:14px;color:var(--muted2)">Free 20-minute review · No software to buy · Plain-English, no tech jargon</p>
+      <div id="who" style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:20px;border-top:1px solid var(--border);font-size:13px;font-weight:500;color:var(--muted)">
+        <span>Nonprofits</span><span style="color:#CBD5E1">•</span><span>Law &amp; Accounting Firms</span><span style="color:#CBD5E1">•</span><span>Property Managers</span><span style="color:#CBD5E1">•</span><span>Clinics &amp; Practices</span>
+      </div>
+    </div>
+
+    <div style="position:relative;isolation:isolate;overflow:hidden;border-radius:24px;border:1px solid var(--glass-border);box-shadow:0 30px 70px rgba(15,30,58,.22);padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:{{ heroCols }};gap:12px;align-items:center;min-height:460px">
+      <div style="position:absolute;inset:0;z-index:-1"><image-slot id="hero-photo" shape="rect" src="" credit="Photo by Vitaly Gariev on Unsplash" credit-href="https://unsplash.com/@silverkblack" placeholder="Photo: team mapping a workflow at a whiteboard"></image-slot><div style="position:absolute;inset:0;pointer-events:none;background:var(--photo-tint)"></div></div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);padding:5px 10px;border-radius:999px;background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12)">Today</div>
+        <div style="transform:rotate(-2deg);background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12);background:var(--glass-strong);border-radius:10px;padding:10px 12px;font-size:12px"><b>Shared inbox</b><div style="color:#DC2626;font-weight:600">47 unread</div></div>
+        <div style="transform:rotate(1.5deg);background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12);background:var(--glass-strong);border-radius:10px;padding:10px 12px;font-size:12px;font-family:'SF Mono',Monaco,monospace">Intake_FINAL_v3_REAL (1).xlsx</div>
+        <div style="transform:rotate(-1deg);background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12);background:var(--glass-strong);border-style:dashed;border-radius:10px;padding:10px 12px;font-size:12px;color:var(--muted)">Paper intake form<br>— missing signature</div>
+        <div style="transform:rotate(3deg);background:#FDE68A;color:#0F1E3A;padding:12px;font-size:13px;font-weight:600;box-shadow:0 4px 10px rgba(0,0,0,.08);font-family:'Comic Sans MS','Marker Felt',cursive">CALL HENDERSON??</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="height:2px;width:100%;background:repeating-linear-gradient(90deg,#94A3B8 0 4px,transparent 4px 8px)"></div>
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(20,184,166,.12)"><div style="width:24px;height:24px;border-radius:50%;background:var(--card)"></div></div>
+        <div style="height:2px;width:100%;background:#14B8A6"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-t);padding:5px 10px;border-radius:999px;background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12)">Steady</div>
+        <div style="background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12);background:var(--glass-strong);border-radius:10px;padding:10px 12px;font-size:12px"><div style="color:var(--muted)">Clients / 2026 / Q2</div><b>Caldwell_Intake_0612.pdf</b></div>
+        <div style="background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12);background:var(--glass-strong);border-radius:10px;padding:10px 12px;font-size:12px;display:flex;gap:8px"><span style="color:#16A34A;font-weight:700">✓</span><div><b>Follow up: Henderson Foundation</b><div style="color:var(--muted)">Marcus · Due Fri</div></div></div>
+        <div style="background:rgba(15,30,58,.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:12px;padding:14px"><div style="font-size:30px;font-weight:700;color:#F59E0B;line-height:1">12 hrs</div><div style="font-size:12px;color:#CBD5E1;margin-top:4px">saved this week</div><div style="font-size:10px;color:#94A3B8;margin-top:6px">[PLACEHOLDER]</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:radial-gradient(80% 60% at 0% 0%,rgba(20,184,166,.10),transparent 60%),radial-gradient(70% 60% at 100% 100%,rgba(167,139,250,.12),transparent 60%),var(--surface)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center"><div style="max-width:760px;display:flex;flex-direction:column;gap:18px">
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15;text-wrap:balance">Still running your organization on sticky notes, spreadsheets, and memory?</h2>
+      <p style="font-size:19px;line-height:1.6;color:var(--muted)">You're not disorganized. You're doing the work of a system with your memory. That's exhausting.</p>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;transform:rotate(1.5deg);border-radius:16px;border:6px solid var(--card);box-shadow:0 24px 60px rgba(15,30,58,.16)"><image-slot id="problem-desk" shape="rounded" radius="10" src="" credit="Photo by Yen Vu on Unsplash" credit-href="https://unsplash.com/@yenvu2410" placeholder="Photo: late-night kitchen table — laptop glow, sticky notes, two open spreadsheets"></image-slot><div style="position:absolute;inset:0;pointer-events:none;border-radius:10px;background:var(--photo-tint)"></div>
+      <div style="position:absolute;top:16px;right:16px;pointer-events:none;border-radius:12px;padding:12px 14px;max-width:230px;background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12)"><div style="font:600 12px 'SF Mono',Monaco,monospace;color:var(--text)">Tuesday · 11:47 p.m.</div><div style="font-size:13px;color:var(--muted);margin-top:4px">Two "final" spreadsheets. Neither matches.</div></div></div></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px">
+      <sc-for list="{{ pains }}" as="p" hint-placeholder-count="3">
+        <div style="background:var(--card);border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:16px;border:1px solid var(--border);overflow:hidden">
+          <div style="height:4px;margin:-32px -32px 12px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></div>
+          <div style="font-size:13px;font-weight:600;color:var(--accent-t);font-family:'SF Mono',Monaco,monospace">{{ p.n }}</div>
+          <h3 style="font-size:22px;font-weight:600">{{ p.t }}</h3>
+          <p style="font-size:16px;line-height:1.6;color:var(--muted);flex:1">{{ p.d }}</p>
+          <div style="border-top:1px solid var(--border);padding-top:16px;display:flex;flex-direction:column;gap:4px">
+            <div style="font-size:40px;font-weight:700;color:var(--accent-t);line-height:1">[XX]%</div>
+            <div style="font-size:13px;color:var(--muted2)">{{ p.s }} — [Source, Year · VERIFY]</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:var(--card)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:64px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15">Simple systems that remember, so you don't have to</h2>
+      <p style="font-size:17px;line-height:1.7;color:var(--muted)">You don't need another app nobody has time to learn, and you definitely don't need a 40-page report that ends up in a drawer. You need the tools you already have to finally work together.</p>
+      <p style="font-size:17px;line-height:1.7;color:var(--muted)">We start by mapping one ordinary week of your team's work. Then we connect your forms, folders, and inboxes, using practical AI only where it actually saves time.</p>
+      <p style="font-size:17px;line-height:1.7;color:var(--muted)">The result: hours back every week, nothing slipping through the cracks, and records ready whenever a funder, auditor, or board member asks.</p>
+      <div style="margin-top:12px;padding:3px;border-radius:16px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"><div style="position:relative;aspect-ratio:16/10;border-radius:13px;overflow:hidden"><image-slot id="solution-whiteboard" shape="rect" src="" credit="Photo by Vitaly Gariev on Unsplash" credit-href="https://unsplash.com/@silverkblack" placeholder="Photo: consultant + ops lead mapping one ordinary week on a whiteboard, relaxed"></image-slot><div style="position:absolute;inset:0;pointer-events:none;background:var(--photo-tint)"></div><div style="position:absolute;top:14px;right:14px;pointer-events:none;display:flex;align-items:center;gap:10px;border-radius:12px;padding:10px 14px;background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12)"><span style="width:24px;height:24px;border-radius:50%;background:#16A34A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">✓</span><div><div style="font-size:13px;font-weight:600;color:var(--text)">Week 1 · Discovery session</div><div style="font-size:12px;color:var(--muted)">Top 5 time leaks found</div></div></div></div></div>
+      <div style="margin-top:12px;padding:3px;border-radius:14px;background:linear-gradient(135deg,#0F766E,#38BDF8,#6366F1,#F59E0B)">
+        <div style="background:var(--card);border-radius:11px;padding:24px;font-size:16px;line-height:1.6;font-weight:500">Unlike software vendors, we don't hand you another login. Unlike traditional consultants, we don't hand you a report. We build working systems with your team, inside the tools you already use, in 30 days.</div>
+      </div>
+    </div>
+    <div style="background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div style="font-size:15px;font-weight:600">One client intake, start to finish</div>
+        <div role="tablist" style="display:flex;background:var(--border);border-radius:999px;padding:4px">
+          <button sc-camel-on-click="{{ showBefore }}" style="border:0;border-radius:999px;padding:9px 18px;font:600 14px Inter,sans-serif;cursor:pointer;background:{{ baBeforeBg }};color:{{ baBeforeFg }}">Before</button>
+          <button sc-camel-on-click="{{ showAfter }}" style="border:0;border-radius:999px;padding:9px 18px;font:600 14px Inter,sans-serif;cursor:pointer;background:{{ baAfterBg }};color:{{ baAfterFg }}">After</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <sc-for list="{{ baSteps }}" as="s" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:28px 1fr auto;gap:14px;align-items:start">
+            <div style="display:flex;flex-direction:column;align-items:center;height:100%">
+              <div style="width:28px;height:28px;border-radius:50%;background:{{ s.dot }};color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">{{ s.i }}</div>
+              <div style="flex:1;width:2px;background:var(--border);min-height:18px"></div>
+            </div>
+            <div style="padding:3px 0 22px"><div style="font-size:15px;font-weight:600">{{ s.t }}</div><div style="font-size:14px;color:var(--muted2);margin-top:2px">{{ s.d }}</div></div>
+            <div style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:{{ s.tagBg }};color:{{ s.tagFg }};white-space:nowrap">{{ s.tag }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="font-size:14px;color:var(--muted);border-top:1px solid var(--border);padding-top:16px">{{ baSummary }}</div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--card);border-top:1px solid var(--border)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:100px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:720px">
+      <div style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-t)">The Starter Package</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15">Five things that change in your first 30 days</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font:600 13px 'SF Mono',Monaco,monospace;color:var(--accent-t);display:flex;align-items:center;gap:12px">01<span style="width:56px;height:3px;border-radius:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></span></div>
+        <h3 style="font-size:28px;font-weight:600;line-height:1.25">Workflow Discovery &amp; Time-Leak Audit</h3>
+        <p style="font-size:17px;line-height:1.7;color:var(--muted)">In a focused 90-minute session, we walk through one real week of your team's work and pinpoint exactly where hours disappear. You'll see your top time leaks ranked by impact, often for the first time.</p>
+        <div style="font-size:15px;font-weight:600;color:var(--text)">→ Your top 5 time leaks, ranked</div>
+      </div>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:28px;min-height:340px;display:flex;flex-direction:column;gap:14px;justify-content:center">
+        <div style="font-size:13px;font-weight:600;color:var(--muted2)">Time leaks · hours / week across team</div>
+        <sc-for list="{{ leaks }}" as="l" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:1fr 110px 44px;gap:12px;align-items:center;font-size:14px">
+            <span>{{ l.t }}</span>
+            <div style="height:10px;background:var(--border);border-radius:99px;overflow:hidden"><div style="height:100%;width:{{ l.w }};background:#F59E0B;border-radius:99px"></div></div>
+            <span style="font-weight:600;text-align:right">{{ l.h }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:28px;min-height:340px;display:flex;flex-direction:column;gap:6px;justify-content:center;font-size:14px;font-family:'SF Mono',Monaco,monospace">
+        <div style="font-weight:600;font-family:Inter,sans-serif;margin-bottom:8px">Shared Drive</div>
+        <div>▾ 01_Clients</div>
+        <div style="padding-left:20px">▾ 2026</div>
+        <div style="padding-left:40px">▾ Q2</div>
+        <div style="padding-left:60px;background:rgba(20,184,166,.16);border-radius:4px;padding-top:3px;padding-bottom:3px">2026-06-12_Intake_Caldwell.pdf</div>
+        <div style="padding-left:60px;color:var(--muted2)">2026-06-14_Intake_Ortiz.pdf</div>
+        <div>▸ 02_Grants</div>
+        <div>▸ 03_Board</div>
+        <div>▸ 04_HR</div>
+        <div style="margin-top:10px;font-family:Inter,sans-serif;font-size:12px;color:var(--muted2)">Naming rule: YYYY-MM-DD_Type_Name</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font:600 13px 'SF Mono',Monaco,monospace;color:var(--accent-t);display:flex;align-items:center;gap:12px">02<span style="width:56px;height:3px;border-radius:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></span></div>
+        <h3 style="font-size:28px;font-weight:600;line-height:1.25">One home for your information</h3>
+        <p style="font-size:17px;line-height:1.7;color:var(--muted)">No more "FINAL_v3_REAL." We organize your shared drive, set clear naming rules, and create a single source of truth so anyone can find the current version in seconds, even the night before an audit.</p>
+        <div style="font-size:15px;font-weight:600">→ Find any file in under 30 seconds <span style="color:var(--muted2);font-weight:400">[PLACEHOLDER]</span></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font:600 13px 'SF Mono',Monaco,monospace;color:var(--accent-t);display:flex;align-items:center;gap:12px">03<span style="width:56px;height:3px;border-radius:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></span></div>
+        <h3 style="font-size:28px;font-weight:600;line-height:1.25">Paperwork automation</h3>
+        <p style="font-size:17px;line-height:1.7;color:var(--muted)">Enter information once and let it flow where it needs to go. Smart forms and simple automations eliminate retyping between intake forms, spreadsheets, and your CRM or practice software.</p>
+        <div style="font-size:15px;font-weight:600">→ Up to [X] hours saved per staff member per week <span style="color:var(--muted2);font-weight:400">[PLACEHOLDER]</span></div>
+      </div>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:28px;min-height:340px;display:grid;grid-template-columns:1fr 40px 1fr;align-items:center;gap:8px">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;font-size:12px">
+          <b style="font-size:14px">Client intake</b>
+          <div style="color:var(--muted2)">Name</div><div style="border:1px solid var(--input);border-radius:6px;padding:7px">Rosa Ortiz</div>
+          <div style="color:var(--muted2)">Address</div><div style="border:1px solid var(--input);border-radius:6px;padding:7px">412 Elm St</div>
+          <div style="background:#0F766E;color:#fff;border-radius:6px;padding:8px;text-align:center;font-weight:600">Submit once</div>
+        </div>
+        <div style="height:2px;background:#14B8A6"></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px"><span style="color:#16A34A;font-weight:700">✓</span> Spreadsheet row</div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px"><span style="color:#16A34A;font-weight:700">✓</span> CRM contact</div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px"><span style="color:#16A34A;font-weight:700">✓</span> Filed PDF</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 32px rgba(15,30,58,.08);overflow:hidden">
+        <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center"><b style="font-size:15px">Follow-ups this week</b><span style="font-size:12px;color:#16A34A;font-weight:600">● Auto-updating</span></div>
+        <sc-for list="{{ followups }}" as="f" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;gap:12px;align-items:center;padding:13px 20px;border-bottom:1px solid var(--surface);font-size:13px">
+            <span style="font-weight:500">{{ f.t }}</span><span style="color:var(--muted2)">{{ f.o }}</span><span style="color:var(--muted2)">{{ f.d }}</span>
+            <span style="justify-self:start;font-size:11px;font-weight:600;padding:4px 9px;border-radius:999px;background:{{ f.bg }};color:{{ f.fg }}">{{ f.s }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font:600 13px 'SF Mono',Monaco,monospace;color:var(--accent-t);display:flex;align-items:center;gap:12px">04<span style="width:56px;height:3px;border-radius:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></span></div>
+        <h3 style="font-size:28px;font-weight:600;line-height:1.25">Automatic follow-up system</h3>
+        <p style="font-size:17px;line-height:1.7;color:var(--muted)">Grant deadlines, donor thank-yous, tenant requests, client check-ins: every follow-up is assigned, scheduled, and reminded automatically. Nothing depends on someone's memory or a sticky note again.</p>
+        <div style="font-size:15px;font-weight:600">→ Zero follow-ups left to memory</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font:600 13px 'SF Mono',Monaco,monospace;color:var(--accent-t);display:flex;align-items:center;gap:12px">05<span style="width:56px;height:3px;border-radius:3px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></span></div>
+        <h3 style="font-size:28px;font-weight:600;line-height:1.25">Practical AI helpers + team training</h3>
+        <p style="font-size:17px;line-height:1.7;color:var(--muted)">Safe, practical AI assistants for the tasks that drain you most — summarizing notes, drafting routine emails, pulling report data — with clear guardrails for sensitive information. Then we train your team so it sticks.</p>
+        <div style="font-size:15px;font-weight:600">→ Hands-on training included</div>
+      </div>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:24px;min-height:340px;display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div style="font-size:12px;font-weight:600;color:#6366F1">AI draft · Board meeting summary</div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;font-size:14px;line-height:1.6;color:var(--muted)">Q2 highlights: 142 families served, Henderson report submitted on time, intake processing time down from 3 days to same-day.</div>
+        <div style="display:flex;align-items:center;gap:10px;background:rgba(245,158,11,.10);border:1px solid #FDE68A;border-radius:10px;padding:12px 14px;font-size:13px"><span style="font-weight:700;color:var(--warn-t)">Human review</span><span style="color:var(--muted);flex:1">Denise checks before it's sent</span><span style="background:#0F766E;color:#fff;border-radius:6px;padding:6px 12px;font-weight:600">Approve</span></div>
+        <div style="font-size:12px;color:var(--muted2)">No client names or case notes shared with the AI tool.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="calculator" style="background:var(--surface)">
+  <div style="max-width:960px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:40px">
+    <div style="text-align:center;display:flex;flex-direction:column;gap:12px">
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15">How much time is paperwork costing you?</h2>
+      <p style="font-size:18px;color:var(--muted)">Move the sliders. See what you could get back.</p>
+    </div>
+    <div style="border:1px solid transparent;border-top-width:5px;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%) border-box;border-radius:12px;box-shadow:0 20px 50px rgba(59,130,246,.14);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))">
+      <div style="padding:36px;display:flex;flex-direction:column;gap:28px;border-right:1px solid var(--border)">
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;justify-content:space-between;font-size:15px;font-weight:500">Staff handling admin <b>{{ staff }}</b></span><input type="range" min="1" max="50" value="{{ staff }}" sc-camel-on-change="{{ setStaff }}"></label>
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;justify-content:space-between;font-size:15px;font-weight:500">Hours / person / week on repetitive admin <b>{{ hours }}</b></span><input type="range" min="0" max="20" value="{{ hours }}" sc-camel-on-change="{{ setHours }}"></label>
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:15px;font-weight:500">Average loaded hourly cost</span>
+          <div style="display:flex;align-items:center;border:1px solid var(--input);border-radius:6px;height:48px;padding:0 16px;gap:6px"><span style="color:var(--muted2)">$</span><input type="number" min="0" max="500" value="{{ cost }}" sc-camel-on-change="{{ setCost }}" style="border:0;outline:0;font:16px Inter,sans-serif;width:100%;background:transparent;color:inherit"></div></label>
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:15px;font-weight:500">Organization type</span>
+          <sc-raw-select value="{{ org }}" sc-camel-on-change="{{ setOrg }}" style="height:48px;border:1px solid var(--input);border-radius:6px;padding:0 12px;font:16px Inter,sans-serif;background:var(--card);color:var(--text)"><option>Nonprofit</option><option>Professional-Service Firm</option><option>Property Management</option><option>Healthcare</option></sc-raw-select></label>
+      </div>
+      <div aria-live="polite" style="padding:36px;display:flex;flex-direction:column;gap:22px">
+        <div><div style="font-size:60px;font-weight:700;line-height:1.05;letter-spacing:-.02em;background:var(--gtext);-webkit-background-clip:text;background-clip:text;color:transparent">{{ hoursOut }}</div><div style="font-size:17px;font-weight:500;margin-top:6px">hours back per year</div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:15px;color:var(--muted)"><span>≈ <b>{{ dollarsOut }}</b> in staff time</span>
+          <span style="background:#0F1E3A;color:#F59E0B;font-weight:700;border-radius:999px;padding:6px 14px">{{ paybackOut }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px">
+          <div><div style="display:flex;justify-content:space-between;color:var(--muted2)"><span>Starter Package</span><span>$1,000</span></div><div style="height:12px;background:var(--surface);border-radius:99px;margin-top:4px"><div style="height:100%;width:{{ barPkg }};background:#94A3B8;border-radius:99px"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;color:var(--muted2)"><span>Annual value of time recovered</span><span>{{ dollarsOut }}</span></div><div style="height:12px;background:var(--surface);border-radius:99px;margin-top:4px"><div style="height:100%;width:100%;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%);border-radius:99px"></div></div></div>
+        </div>
+        <p style="font-size:15px;line-height:1.6;background:rgba(20,184,166,.10);border-radius:8px;padding:14px 16px">That's <b>{{ weeksOut }} work weeks</b> your team can spend on {{ orgCopy }} instead of paperwork.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <a href="#estimate" style="background:#0F766E;color:#fff;padding:13px 18px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none">Email Me This Estimate for My Board</a>
+          <a href="#book" style="color:var(--accent-t);padding:13px 6px;font-weight:600;font-size:14px">Book a Free Review →</a>
+        </div>
+        <p style="font-size:12px;color:var(--muted2)">Estimates use a conservative 40% reduction for illustration. Actual results vary by organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results" style="background:var(--card)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:48px">
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15">Small teams. Real breathing room.</h2>
+    <div style="border-radius:20px;background:radial-gradient(120% 140% at 100% 0%,rgba(99,102,241,.5),transparent 55%),radial-gradient(90% 120% at 0% 100%,rgba(20,184,166,.4),transparent 60%),radial-gradient(60% 80% at 100% 100%,rgba(245,158,11,.25),transparent 60%),#0F1E3A;color:#fff;padding:clamp(28px,5vw,56px);border:1px solid var(--border);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;align-items:center;gap:16px"><div style="flex:none;padding:3px;border-radius:50%;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"><image-slot id="founder" shape="circle" style="width:76px;height:76px;display:block" placeholder="Founder"></image-slot></div><div><div style="font-weight:600;font-size:16px">[Founder name]</div><div style="font-size:14px;color:#CBD5E1">Founder · works with every client directly</div></div></div>
+        <span style="align-self:flex-start;background:#F59E0B;color:#0F1E3A;font-size:13px;font-weight:700;border-radius:999px;padding:6px 14px">Founding Client offer</span>
+        <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:38px;line-height:1.15">Be one of our first 10 clients.</h3>
+        <p style="font-size:17px;line-height:1.6;color:#CBD5E1">Get the full Starter Package plus an extra 30-day check-in at no extra cost. In return, we'll ask if we can share your before-and-after story.</p>
+        <a href="#book" style="align-self:flex-start;background:#fff;color:#0F766E;padding:15px 24px;border-radius:8px;font-weight:600;text-decoration:none">Claim a Founding Spot</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#24365A;border-radius:12px;overflow:hidden">
+        <div style="background:#16284A;padding:24px"><div style="font-size:36px;font-weight:700;color:#5EEAD4">7 / 10</div><div style="font-size:13px;color:#94A3B8;margin-top:4px">spots remaining [PLACEHOLDER]</div></div>
+        <div style="background:#16284A;padding:24px"><div style="font-size:36px;font-weight:700;color:#5EEAD4">30</div><div style="font-size:13px;color:#94A3B8;margin-top:4px">days to visible results</div></div>
+        <div style="background:#16284A;padding:24px"><div style="font-size:36px;font-weight:700;color:#5EEAD4">$1,000</div><div style="font-size:13px;color:#94A3B8;margin-top:4px">fixed price, no surprise invoices</div></div>
+        <div style="background:#16284A;padding:24px"><div style="font-size:36px;font-weight:700;color:#5EEAD4">+30</div><div style="font-size:13px;color:#94A3B8;margin-top:4px">extra days of check-in</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="background:var(--surface2);border-top:1px solid var(--border)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:48px">
+    <div style="text-align:center;display:flex;flex-direction:column;gap:12px">
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15">Start small. See results. Then decide.</h2>
+      <p style="font-size:16px;color:var(--muted)">Free 20-minute review · Fixed price · Results in 30 days · Nonprofit-friendly</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px;align-items:stretch">
+      <div style="position:relative;border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%) border-box;border-radius:14px;padding:36px;display:flex;flex-direction:column;gap:20px;transform:translateY(-8px);box-shadow:0 20px 48px rgba(15,118,110,.16)">
+        <span style="position:absolute;top:-14px;left:32px;background:#0F766E;color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:6px 12px">Best Place to Start</span>
+        <div><div style="font-size:20px;font-weight:600">Starter Package</div><div style="font-size:14px;color:var(--muted2);margin-top:4px">Results within 30 days</div></div>
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:52px;font-weight:700;letter-spacing:-.02em">$1,000</span><span style="color:var(--muted2)">one-time</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;flex:1">
+          <sc-for list="{{ tier1 }}" as="x" hint-placeholder-count="8"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="color:#16A34A;font-weight:700">✓</span><span>{{ x }}</span></div></sc-for>
+        </div>
+        <a href="#book" style="background:#0F766E;color:#fff;padding:15px;border-radius:8px;font-weight:600;text-align:center;text-decoration:none" style-hover="background:#0B5F58;box-shadow:0 8px 24px rgba(245,158,11,.3)">Book a Free Workflow Review</a>
+        <a href="#book" style="text-align:center;font-size:14px;font-weight:600">Or reserve your Starter Package →</a>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:36px;display:flex;flex-direction:column;gap:20px">
+        <div><div style="font-size:20px;font-weight:600">Steady Systems</div><div style="font-size:14px;color:var(--muted2);margin-top:4px">For teams ready to expand</div></div>
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:15px;color:var(--muted2)">from</span><span style="font-size:44px;font-weight:700">$3,500</span><span style="font-size:12px;color:var(--muted2)">[PLACEHOLDER]</span></div>
+        <div style="font-size:14px;font-weight:600;color:var(--muted)">Everything in Starter, plus:</div>
+        <div style="display:flex;flex-direction:column;gap:10px;flex:1">
+          <sc-for list="{{ tier2 }}" as="x" hint-placeholder-count="7"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="color:#16A34A;font-weight:700">✓</span><span>{{ x }}</span></div></sc-for>
+        </div>
+        <a href="#book" style="border:2px solid var(--accent-t);color:var(--accent-t);padding:13px;border-radius:8px;font-weight:600;text-align:center;text-decoration:none">Book a Free Workflow Review</a>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:36px;display:flex;flex-direction:column;gap:20px">
+        <div><div style="font-size:20px;font-weight:600">Ongoing Partner</div><div style="font-size:14px;color:var(--muted2);margin-top:4px">Monthly support</div></div>
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:44px;font-weight:700">Custom</span><span style="font-size:12px;color:var(--muted2)">[PLACEHOLDER]</span></div>
+        <div style="font-size:14px;font-weight:600;color:var(--muted)">Everything in Steady Systems, plus:</div>
+        <div style="display:flex;flex-direction:column;gap:10px;flex:1">
+          <sc-for list="{{ tier3 }}" as="x" hint-placeholder-count="5"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="color:#16A34A;font-weight:700">✓</span><span>{{ x }}</span></div></sc-for>
+        </div>
+        <a href="#book" style="border:2px solid var(--accent-t);color:var(--accent-t);padding:13px;border-radius:8px;font-weight:600;text-align:center;text-decoration:none">Let's Talk</a>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:15px;color:var(--muted)">Need approval? We'll send a one-page proposal you can share with your board, partners, or owner.</p>
+
+    <div id="faq" style="max-width:820px;width:100%;margin:24px auto 0;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)">
+      <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="4">
+        <div style="border-bottom:1px solid var(--border)">
+          <button sc-camel-on-click="{{ q.toggle }}" aria-expanded="{{ q.open }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:0;padding:22px 0;font:600 17px Inter,sans-serif;color:var(--text);text-align:left;cursor:pointer">{{ q.q }}<span style="font-size:22px;color:var(--accent-t);font-weight:400">{{ q.icon }}</span></button>
+          <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p style="padding:0 0 22px;font-size:16px;line-height:1.6;color:var(--muted);max-width:680px">{{ q.a }}</p></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface)">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,100px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h3 style="font-size:28px;font-weight:600">Works with the tools you already use</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px">
+        <sc-for list="{{ tools }}" as="t" hint-placeholder-count="12"><div style="background:var(--card);border:1px solid var(--border);border-radius:8px;height:56px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--muted2)">{{ t }}</div></sc-for>
+      </div>
+      <p style="font-size:15px;color:var(--muted)">Don't see yours? We work with most common tools. <a href="#book" style="font-weight:600">Ask about your tools →</a></p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h3 style="font-size:28px;font-weight:600">Careful with sensitive information</h3>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ care }}" as="c" hint-placeholder-count="5"><div style="display:flex;gap:14px;align-items:flex-start;background:var(--card);border-radius:10px;padding:16px 18px;font-size:15px;line-height:1.5"><span style="flex:none;width:28px;height:28px;border-radius:8px;background:rgba(20,184,166,.16);color:var(--accent-t);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">✓</span>{{ c }}</div></sc-for>
+      </div>
+      <a href="#" style="font-weight:600;font-size:15px">Read our Data Care Practices →</a>
+    </div>
+  </div>
+</section>
+
+<section id="demo" style="background:var(--card)">
+  <div style="max-width:1100px;margin:0 auto;padding:clamp(64px,10vw,120px) clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:40px;align-items:center">
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.15;text-align:center">See a Steadyline workflow in action</h2>
+    <div style="width:100%;max-width:900px;aspect-ratio:16/9;border-radius:16px;position:relative;overflow:hidden;background:repeating-linear-gradient(135deg,var(--surface) 0 12px,var(--border) 12px 24px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:1px solid var(--border)">
+      <div style="position:absolute;inset:0"><image-slot id="video-thumb" shape="rect" src="" credit="Photo by Vitaly Gariev on Unsplash" credit-href="https://unsplash.com/@silverkblack" placeholder="Video thumbnail: before/after split — cluttered desk vs. calm, organized dashboard"></image-slot><div style="position:absolute;inset:0;pointer-events:none;background:var(--photo-tint)"></div></div>
+      <div style="position:absolute;top:18px;right:18px;pointer-events:none;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--text);background:var(--glass);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid var(--glass-border);box-shadow:0 8px 32px rgba(15,30,58,.12)">2:45 · Captions on</div>
+      <div style="position:relative;pointer-events:none;width:92px;height:92px;border-radius:50%;background:rgba(255,255,255,.28);backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border:1px solid rgba(255,255,255,.6);box-shadow:0 12px 40px rgba(15,30,58,.3);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(15,118,110,.3)"><div style="width:0;height:0;border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px"></div></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center;font-size:14px">
+      <a href="#demo">0:00 One intake, retyped 3×</a><a href="#demo">0:40 The fix</a><a href="#demo">1:30 AI helper + human review</a><a href="#demo">2:15 The 30 days</a>
+    </div>
+    <div style="width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin-top:24px">
+      <sc-for list="{{ weeks }}" as="w" hint-placeholder-count="4">
+        <button sc-camel-on-click="{{ w.select }}" style="text-align:left;cursor:pointer;border-radius:12px;padding:22px;border:{{ w.border }};background:{{ w.bg }};font-family:Inter,sans-serif;color:var(--text);display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-t)">{{ w.k }}</span>
+          <span style="font-size:17px;font-weight:600">{{ w.t }}</span>
+          <sc-if value="{{ w.active }}" hint-placeholder-val="{{ false }}"><span style="font-size:14px;line-height:1.55;color:var(--muted)">{{ w.d }}</span></sc-if>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="book" style="position:relative;overflow:hidden;background:#0F1E3A">
+  <div style="position:absolute;inset:0"><image-slot id="cta-bg" shape="rect" src="" credit="Photo by Sable Flow on Unsplash" credit-href="https://unsplash.com/@sableflow" placeholder="Photo: ops lead leaving the office at golden hour, calm, bag on shoulder"></image-slot></div>
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%);opacity:.55"></div>
+  <div style="position:relative;pointer-events:none;padding:clamp(48px,8vw,110px) clamp(16px,4vw,32px)">
+    <div style="max-width:860px;margin:0 auto;padding:clamp(36px,6vw,64px) clamp(20px,4vw,56px);border-radius:28px;background:rgba(15,30,58,.5);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(255,255,255,.22);box-shadow:0 30px 80px rgba(0,0,0,.3);text-align:center;display:flex;flex-direction:column;gap:24px;align-items:center;color:#fff">
+      <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(36px,4.6vw,56px);line-height:1.1;text-wrap:balance">Imagine leaving at 5:00, knowing nothing will slip.</h2>
+      <p style="font-size:19px;line-height:1.6;max-width:640px">Book a free 20-minute Workflow Review. We'll show you your biggest time leaks and exactly how we'd fix them, with no pressure and no jargon.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px">
+        <a href="#book" style="background:#fff;color:#0F766E;height:60px;padding:0 30px;pointer-events:auto;border-radius:8px;font-weight:700;font-size:17px;display:flex;align-items:center;text-decoration:none" style-hover="transform:translateY(-2px);box-shadow:0 10px 30px rgba(245,158,11,.4)">Book My Free Workflow Review</a>
+        <a href="#lead" style="border:2px solid #fff;color:#fff;height:60px;padding:0 28px;pointer-events:auto;border-radius:8px;font-weight:600;font-size:16px;display:flex;align-items:center;text-decoration:none">Get the 10 Hidden Time Leaks Checklist</a>
+      </div>
+      <p style="font-size:14px;font-weight:500">Free review · Fixed $1,000 starter price · Results in 30 days · Plain-English guidance</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closeModal }}" style="position:fixed;inset:0;z-index:2000;background:rgba(10,18,36,.62);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:16px">
+  <div role="dialog" aria-modal="true" aria-label="{{ mTitle }}" sc-camel-on-click="{{ stop }}" style="width:100%;max-width:560px;max-height:calc(100vh - 32px);overflow:auto;background:var(--card);color:var(--text);border-radius:16px;border:1px solid var(--border);box-shadow:0 30px 80px rgba(0,0,0,.35);display:flex;flex-direction:column">
+    <div style="height:5px;flex:none;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></div>
+    <div style="padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-t)">{{ mEyebrow }}</span><h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:30px;line-height:1.15;text-wrap:balance">{{ mTitle }}</h2></div>
+      <button sc-camel-on-click="{{ closeModal }}" aria-label="Close" style="flex:none;width:44px;height:44px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:22px;cursor:pointer">×</button>
+    </div>
+    <sc-if value="{{ showProgress }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><div style="height:4px;border-radius:9px;background:linear-gradient(90deg,#0F766E,#14B8A6)"></div><div style="height:4px;border-radius:9px;background:{{ prog2 }}"></div></div><span style="font-size:13px;color:var(--muted2)">{{ progLabel }}</span></div>
+    </sc-if>
+    <sc-if value="{{ stepForm }}" hint-placeholder-val="{{ true }}">
+      <form sc-camel-on-submit="{{ submitForm }}" sc-camel-no-validate="{{ true }}" style="display:flex;flex-direction:column;gap:16px">
+        <sc-for list="{{ fields }}" as="f" hint-placeholder-count="3">
+          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;font-weight:500">{{ f.label }}</span>
+            <input type="{{ f.type }}" value="{{ f.value }}" sc-camel-on-change="{{ f.onChange }}" placeholder="{{ f.ph }}" style="height:48px;border:1px solid {{ f.bc }};border-radius:6px;padding:0 16px;font:16px Inter,sans-serif;background:var(--card);color:var(--text)">
+            <sc-if value="{{ f.hasErr }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;color:var(--err-t)">{{ f.err }}</span></sc-if>
+          </label>
+        </sc-for>
+        <sc-if value="{{ isBook }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+            <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;font-weight:500">Organization type</span><sc-raw-select value="{{ orgType }}" sc-camel-on-change="{{ setOrgType }}" style="height:48px;border:1px solid var(--input);border-radius:6px;padding:0 12px;font:16px Inter,sans-serif;background:var(--card);color:var(--text)"><option>Nonprofit</option><option>Professional-Service Firm</option><option>Property Management</option><option>Healthcare</option><option>Other</option></sc-raw-select></label>
+            <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;font-weight:500">Team size</span><sc-raw-select value="{{ teamSize }}" sc-camel-on-change="{{ setTeamSize }}" style="height:48px;border:1px solid var(--input);border-radius:6px;padding:0 12px;font:16px Inter,sans-serif;background:var(--card);color:var(--text)"><option>1–5</option><option>6–15</option><option>16–50</option><option>50+</option></sc-raw-select></label>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:14px;font-weight:500">What's eating most of your team's time? <span style="color:var(--muted2);font-weight:400">(optional)</span></span><textarea value="{{ note }}" sc-camel-on-change="{{ setNote }}" rows="3" placeholder="e.g. Retyping intake forms, chasing grant follow-ups" style="border:1px solid var(--input);border-radius:6px;padding:12px 16px;font:16px/1.5 Inter,sans-serif;background:var(--card);color:var(--text);resize:vertical"></textarea></label>
+        </sc-if>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--muted);cursor:pointer"><input type="checkbox" checked="{{ consent }}" sc-camel-on-change="{{ setConsent }}" style="width:20px;height:20px;margin:1px 0 0;accent-color:#0F766E;flex:none">Send me one practical time-saving tip every other week. Unsubscribe anytime.</label>
+        <button type="submit" style="background:#0F766E;color:#fff;border:0;border-radius:8px;height:52px;padding:0 24px;font:600 16px Inter,sans-serif;cursor:pointer;opacity:{{ submitOpacity }}" style-hover="background:#0B5F58;box-shadow:0 8px 24px rgba(245,158,11,.3)">{{ submitLabel }}</button>
+        <p style="font-size:12px;color:var(--muted2)">We'll only use this to contact you about your request. <a href="#">Privacy Policy</a></p>
+      </form>
+    </sc-if>
+    <sc-if value="{{ stepSchedule }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <p style="font-size:16px;line-height:1.6;color:var(--muted)">Thanks, {{ firstName }}. Pick a time for your 20-minute review.</p>
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px">
+          <sc-for list="{{ days }}" as="d" hint-placeholder-count="5"><button sc-camel-on-click="{{ d.select }}" style="height:64px;border-radius:10px;border:1px solid {{ d.bd }};background:{{ d.bg }};color:{{ d.fg }};font-family:Inter,sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-size:12px;font-weight:500">{{ d.dow }}</span><span style="font-size:20px;font-weight:700">{{ d.num }}</span></button></sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px">
+          <sc-for list="{{ slots }}" as="sl" hint-placeholder-count="5"><button sc-camel-on-click="{{ sl.select }}" style="height:44px;border-radius:8px;border:1px solid {{ sl.bd }};background:{{ sl.bg }};color:var(--text);font:500 14px Inter,sans-serif;cursor:pointer">{{ sl.t }}</button></sc-for>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button sc-camel-on-click="{{ back }}" style="height:52px;padding:0 20px;border-radius:8px;border:2px solid var(--border);background:transparent;color:var(--text);font:600 15px Inter,sans-serif;cursor:pointer">Back</button>
+          <button sc-camel-on-click="{{ confirm }}" style="background:#0F766E;color:#fff;border:0;border-radius:8px;height:52px;padding:0 24px;font:600 16px Inter,sans-serif;cursor:pointer;flex:1;opacity:{{ confirmOpacity }}">{{ confirmLabel }}</button>
+        </div>
+        <p style="font:12px 'SF Mono',Monaco,monospace;color:var(--muted2)">scheduler placeholder · embed Cal.com / Calendly here</p>
+      </div>
+    </sc-if>
+    <sc-if value="{{ stepDone }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:12px 0 4px;animation:slPop .4s cubic-bezier(.16,1,.3,1)">
+        <div style="width:72px;height:72px;border-radius:50%;background:#16A34A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;box-shadow:0 0 0 8px rgba(22,163,74,.15)">✓</div>
+        <h3 style="font-size:22px;font-weight:600">{{ doneTitle }}</h3>
+        <p style="font-size:16px;line-height:1.6;color:var(--muted);max-width:420px">{{ doneMsg }}</p>
+        <button sc-camel-on-click="{{ closeModal }}" style="background:#0F766E;color:#fff;border:0;border-radius:8px;height:52px;padding:0 24px;font:600 16px Inter,sans-serif;cursor:pointer;margin-top:8px">Back to the page</button>
+      </div>
+    </sc-if>
+    </div>
+  </div>
+</div>
+</sc-if>
+<footer style="background:#0F1E3A;color:#CBD5E1;font-size:14px;line-height:1.6"><div style="height:4px;background:linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%)"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:80px clamp(20px,4vw,32px) 40px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px">
+      <div style="display:flex;flex-direction:column;gap:14px;grid-column:1/-1;min-width:0;max-width:440px">
+        <div style="display:flex;align-items:center;gap:12px;color:#fff"><svg width="44" height="44" sc-camel-view-box="0 0 48 48" fill="none" aria-hidden="true" style="flex:none"><defs><linearGradient id="sl-ftr" sc-camel-gradient-units="userSpaceOnUse" x1="4" y1="6" x2="44" y2="42"><stop offset="0" stop-color="#5EEAD4"></stop><stop offset=".45" stop-color="#38BDF8"></stop><stop offset="1" stop-color="#A78BFA"></stop></linearGradient></defs><path d="M9 11 C17 11 17 24 25 24 M6 24 H25 M9 37 C17 37 17 24 25 24 M25 24 H35" stroke="url(#sl-ftr)" stroke-width="3.2" stroke-linecap="round"></path><circle cx="9" cy="11" r="3" fill="#5EEAD4"></circle><circle cx="6" cy="24" r="3" fill="#38BDF8"></circle><circle cx="9" cy="37" r="3" fill="#A78BFA"></circle><circle cx="40" cy="24" r="5" fill="#F59E0B"></circle></svg><span style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'DM Serif Display',serif;font-size:26px;line-height:1">Steadyline</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.22em;color:#94A3B8">AI &amp; WORKFLOW CONSULTING</span></span></div>
+        <p>Simple systems that remember, so you don't have to.</p>
+        <p style="color:#fff;font-weight:500;margin-top:8px">One practical time-saving tip every other week. No hype, no spam.</p>
+        <div style="display:flex;gap:8px;max-width:380px"><input placeholder="you@organization.org" style="flex:1;min-width:0;height:44px;border-radius:6px;border:1px solid #24365A;background:#16284A;color:#fff;padding:0 14px;font:15px Inter,sans-serif"><button style="height:44px;border:0;border-radius:6px;background:#14B8A6;color:#0F1E3A;font:600 14px Inter,sans-serif;padding:0 16px;cursor:pointer">Subscribe</button></div>
+      </div>
+      <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="4">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="color:#fff;font-weight:600;margin-bottom:4px">{{ col.h }}</div>
+          <sc-for list="{{ col.links }}" as="l"><a href="#" style="color:#CBD5E1" style-hover="color:#14B8A6">{{ l }}</a></sc-for>
+        </div>
+      </sc-for>
+    </div>
+    <div style="border-top:1px solid #24365A;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#94A3B8"><span>© 2026 Steadyline AI &amp; Workflow Consulting</span><span>LinkedIn · Facebook · YouTube</span></div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;headlineVariant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Duct tape&quot;,&quot;Nothing slips&quot;,&quot;Stretched thin&quot;],&quot;default&quot;:&quot;Duct tape&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;beforeAfterDefault&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;before&quot;,&quot;after&quot;],&quot;default&quot;:&quot;after&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = {
+    staff: 6, hours: 6, cost: 32, org: 'Nonprofit', ba: null, faq: 0, week: 0,
+    w: typeof window !== 'undefined' ? window.innerWidth : 1440, menu: false,
+    theme: (() => { try { const q = new URLSearchParams(location.search).get('theme'); if (q === 'dark' || q === 'light') return q; } catch (e) {} try { const v = localStorage.getItem('steadyline-theme'); if (v) return v; } catch (e) {} return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; })(),
+    modal: null, step: 'form', tried: false, loading: false, day: 0, slot: null, consent: false,
+    form: { name: '', email: '', org: '', phone: '', type: 'Nonprofit', size: '6–15', note: '' }
+  };
+  componentDidMount() {
+    this.applyTheme();
+    const setImgs = () => { const r = window.__resources || {}; document.querySelectorAll('image-slot').forEach(el => { const k = el.id.replace(/-/g, '_'); if (r[k] && el.getAttribute('src') !== r[k]) el.setAttribute('src', r[k]); }); };
+    setImgs(); setTimeout(setImgs, 300); setTimeout(setImgs, 1500);
+    this._resize = () => this.setState({ w: window.innerWidth });
+    this._click = e => { const a = e.target.closest && e.target.closest('a[href="#book"],a[href="#lead"],a[href="#estimate"]'); if (!a) return; e.preventDefault(); this.open(a.getAttribute('href').slice(1)); };
+    this._key = e => { if (e.key === 'Escape' && this.state.modal) this.close(); };
+    window.addEventListener('resize', this._resize); document.addEventListener('click', this._click); document.addEventListener('keydown', this._key);
+  }
+  componentDidUpdate() { this.applyTheme(); }
+  componentWillUnmount() { window.removeEventListener('resize', this._resize); document.removeEventListener('click', this._click); document.removeEventListener('keydown', this._key); }
+  applyTheme() { document.documentElement.setAttribute('data-theme', this.state.theme); }
+  open = m => this.setState({ modal: m, step: 'form', tried: false, loading: false, slot: null, day: 0, menu: false });
+  close = () => this.setState({ modal: null });
+  errors() {
+    const f = this.state.form, e = {}, em = f.email.trim();
+    if (!f.name.trim()) e.name = 'Please add your name.';
+    if (!em) e.email = 'We need an email to send your confirmation.';
+    else if (!em.includes('@')) e.email = 'Looks like that email is missing an @.';
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(em)) e.email = 'That email looks incomplete.';
+    if (this.state.modal === 'book' && !f.org.trim()) e.org = 'Which organization is this for?';
+    return e;
+  }
+  days() {
+    const out = [], d = new Date();
+    while (out.length < 5) { d.setDate(d.getDate() + 1); const w = d.getDay(); if (w && w < 6) out.push({ dow: d.toLocaleDateString('en-US', { weekday: 'short' }), num: d.getDate(), long: d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) }); }
+    return out;
+  }
+  submitForm = e => {
+    e.preventDefault(); this.setState({ tried: true });
+    if (Object.keys(this.errors()).length) return;
+    this.setState({ loading: true });
+    setTimeout(() => this.setState({ loading: false, step: this.state.modal === 'book' ? 'schedule' : 'done' }), 900);
+  };
+  confirm = () => { if (!this.state.slot || this.state.loading) return; this.setState({ loading: true }); setTimeout(() => this.setState({ loading: false, step: 'done' }), 800); };
+  ui(hrs, dol) {
+    const s = this.state, f = s.form, m = s.modal, mobile = s.w < 1024, errs = this.errors();
+    const show = k => s.tried && !!errs[k];
+    const fld = (k, label, type, ph) => ({ label, type, ph, value: f[k], onChange: e => this.setState({ form: { ...this.state.form, [k]: e.target.value } }), err: errs[k] || '', hasErr: show(k), bc: show(k) ? 'var(--err-t)' : 'var(--input)' });
+    const fields = m === 'book'
+      ? [fld('name', 'Full name *', 'text', 'Denise Caldwell'), fld('email', 'Work email *', 'email', 'you@organization.org'), fld('org', 'Organization *', 'text', 'Riverside Family Services'), fld('phone', 'Phone (optional)', 'tel', '(555) 555-0123')]
+      : [fld('name', 'Name *', 'text', 'Denise Caldwell'), fld('email', 'Email *', 'email', 'you@organization.org'), fld('org', 'Organization (optional)', 'text', '')];
+    const dl = this.days(), day = dl[s.day];
+    const days = dl.map((d, i) => ({ ...d, select: () => this.setState({ day: i, slot: null }), bg: s.day === i ? '#0F766E' : 'transparent', fg: s.day === i ? '#fff' : 'var(--text)', bd: s.day === i ? '#0F766E' : 'var(--border)' }));
+    const slots = ['9:00 AM', '10:30 AM', '1:00 PM', '2:30 PM', '4:00 PM'].map(t => ({ t, select: () => this.setState({ slot: t }), bg: s.slot === t ? 'rgba(20,184,166,.16)' : 'transparent', bd: s.slot === t ? '#14B8A6' : 'var(--border)' }));
+    const first = f.name.trim().split(' ')[0] || 'there';
+    const titles = { book: ['Free Workflow Review', 'Book your 20-minute review'], lead: ['Free checklist', 'The 10 Hidden Time Leaks Checklist'], estimate: ['Your Time-Back estimate', 'Email this estimate for your board'] }[m] || ['', ''];
+    const done = { book: ['You\u2019re booked, ' + first + '.', day.long + ' at ' + s.slot + '. Check your inbox \u2014 we\u2019ll confirm within one business day.'], lead: ['Got it. Check your inbox.', 'The checklist is on its way. Practical, no hype.'], estimate: ['Sent. Check your inbox.', 'Your estimate \u2014 ' + Math.round(hrs).toLocaleString() + ' hours and $' + Math.round(dol).toLocaleString() + ' a year \u2014 arrives as a one-page summary you can share with your board.'] }[m] || ['', ''];
+    const setF = k => e => this.setState({ form: { ...this.state.form, [k]: e.target.value } });
+    return {
+      modalOpen: !!m, mEyebrow: titles[0], mTitle: titles[1], closeModal: this.close, stop: e => e.stopPropagation(),
+      showProgress: m === 'book' && s.step !== 'done', prog2: s.step === 'schedule' ? 'linear-gradient(90deg,#14B8A6,#3B82F6)' : 'var(--border)',
+      progLabel: s.step === 'schedule' ? 'Step 2 of 2 \u00b7 Pick a time' : 'Step 1 of 2 \u00b7 About you',
+      stepForm: s.step === 'form', stepSchedule: s.step === 'schedule', stepDone: s.step === 'done', isBook: m === 'book',
+      fields, orgType: f.type, setOrgType: setF('type'), teamSize: f.size, setTeamSize: setF('size'), note: f.note, setNote: setF('note'),
+      consent: s.consent, setConsent: e => this.setState({ consent: e.target.checked }), submitForm: this.submitForm,
+      submitLabel: s.loading ? 'One moment\u2026' : m === 'book' ? 'Continue to Scheduling' : m === 'lead' ? 'Send Me the Checklist' : 'Email My Estimate',
+      submitOpacity: s.loading ? '.7' : '1', firstName: first, days, slots, confirm: this.confirm, back: () => this.setState({ step: 'form' }),
+      confirmLabel: s.loading ? 'Booking\u2026' : s.slot ? 'Confirm ' + day.dow + ' ' + day.num + ', ' + s.slot : 'Pick a time', confirmOpacity: s.slot ? '1' : '.5',
+      doneTitle: done[0], doneMsg: done[1],
+      desktop: !mobile, mobile, menuOpen: mobile && s.menu, toggleMenu: () => this.setState({ menu: !s.menu }), closeMenu: () => this.setState({ menu: false }),
+      menuIcon: s.menu ? '\u00d7' : '\u2630', themeIcon: s.theme === 'dark' ? '\u2600' : '\u263e',
+      toggleTheme: () => { const th = s.theme === 'dark' ? 'light' : 'dark'; try { localStorage.setItem('steadyline-theme', th); } catch (e) {} this.setState({ theme: th }); },
+      wide: s.w >= 560, themeRowLabel: s.theme === 'dark' ? '\u2600  Switch to light mode' : '\u263e  Switch to dark mode',
+      ctaLabel: s.w < 560 ? 'Book a Review' : 'Book a Free Workflow Review', heroCols: s.w < 560 ? '1fr' : '1fr 72px 1fr',
+      navLinks: [['How It Works', '#how'], ['Who We Help', '#who'], ['Results', '#results'], ['Pricing', '#pricing'], ['FAQ', '#faq']].map(([t, h]) => ({ t, h }))
+    };
+  }
+  renderVals() {
+    const s = this.state, p = this.props;
+    const ba = s.ba ?? p.beforeAfterDefault ?? 'after';
+    const heads = {
+      'Duct tape': 'Stop being the duct tape. Eliminate paperwork that eats your week.',
+      'Nothing slips': 'Nothing falls through the cracks again, without hiring anyone new.',
+      'Stretched thin': 'Your team is stretched thin. Your systems shouldn\u2019t be.'
+    };
+    const hrs = s.staff * s.hours * 0.4 * 48, dol = hrs * s.cost, mo = dol / 12;
+    const pay = mo > 0 ? Math.ceil((1000 / mo) * 4.33) : null;
+    const fmt = n => '$' + Math.round(n).toLocaleString();
+    const before = [
+      { t: 'Paper intake form', d: 'Filled out by hand at the front desk', tag: 'Manual' },
+      { t: 'Retyped into spreadsheet', d: 'Intake_FINAL_v3_REAL.xlsx', tag: '15 min' },
+      { t: 'Retyped into CRM', d: 'Same name, same address, again', tag: '10 min' },
+      { t: 'Reminder on a sticky note', d: 'Curling off someone\u2019s monitor', tag: 'Fragile' },
+      { t: 'Follow-up', d: 'Depends on who remembers', tag: 'Often missed', bad: true }
+    ];
+    const after = [
+      { t: 'One online form', d: 'Client fills it out once, on any device', tag: '0 min' },
+      { t: 'Auto-filed', d: 'Right folder, right name, every time', tag: 'Automatic' },
+      { t: 'Spreadsheet + CRM updated', d: 'No retyping between systems', tag: 'Automatic' },
+      { t: 'Follow-up assigned', d: 'Reminder goes to the right person', tag: 'Automatic' },
+      { t: 'Status visible to the team', d: 'Everyone sees what\u2019s done', tag: 'Done', good: true }
+    ];
+    const steps = (ba === 'before' ? before : after).map((x, i) => ({
+      ...x, i: i + 1,
+      dot: ba === 'before' ? (x.bad ? '#DC2626' : '#94A3B8') : '#0F766E',
+      tagBg: x.bad ? '#FEE2E2' : x.good ? '#DCFCE7' : ba === 'before' ? 'var(--surface)' : 'rgba(20,184,166,.16)',
+      tagFg: x.bad ? '#B91C1C' : x.good ? '#15803D' : ba === 'before' ? 'var(--muted)' : 'var(--accent-t)'
+    }));
+    const on = { bg: 'var(--card)', fg: 'var(--text)' }, off = { bg: 'transparent', fg: 'var(--muted2)' };
+    const faqs = [
+      ['What if we\u2019re not \u201ctech people\u201d?', 'Most of our clients aren\u2019t. We explain everything in plain English and build inside tools you already use.'],
+      ['Is AI safe for our client, patient, or donor data?', 'We set clear guardrails, recommend only privacy-appropriate tools, and keep sensitive data out of AI tools unless your policies and agreements allow it. [VERIFY]'],
+      ['Can we use grant or capacity-building funds?', 'Many organizations do. We\u2019ll provide a scope and invoice that fits your funder\u2019s requirements.'],
+      ['What if it doesn\u2019t work for us?', '[Guarantee policy — owner to confirm]']
+    ].map(([q, a], i) => ({ q, a, open: s.faq === i, icon: s.faq === i ? '\u2212' : '+', toggle: () => this.setState({ faq: s.faq === i ? -1 : i }) }));
+    const weeks = [
+      ['Week 1', 'Discovery & Time-Leak Audit', 'A 90-minute session mapping one real week. You leave with your top 5 time leaks, ranked.'],
+      ['Week 2', 'Organize & design', 'Shared drive cleanup, naming rules, and the new workflow sketched with your team.'],
+      ['Week 3', 'Build automations', 'Up to 3 paperwork automations and your follow-up system, built and tested.'],
+      ['Week 4', 'Train & hand off', '60-minute team training, recorded walkthrough, then a 30-day check-in.']
+    ].map(([k, t, d], i) => ({ k, t, d, active: s.week === i, bg: s.week === i ? 'linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#0F766E 0%,#14B8A6 18%,#38BDF8 36%,#3B82F6 54%,#6366F1 70%,#A78BFA 85%,#F59E0B 100%) border-box' : 'var(--card)', border: s.week === i ? '2px solid transparent' : '2px solid var(--border)', select: () => this.setState({ week: i }) }));
+    const orgCopy = { 'Nonprofit': 'the mission', 'Professional-Service Firm': 'billable client work', 'Property Management': 'tenants and properties', 'Healthcare': 'patients' }[s.org];
+    return {
+      ...this.ui(hrs, dol),
+      headline: heads[p.headlineVariant] ?? heads['Duct tape'],
+      pains: [
+        { n: '01', t: 'Missed follow-ups', d: 'Grant renewals, donor thank-yous, client check-ins, and tenant requests that sit unanswered in a shared inbox until it\u2019s too late.', s: 'of follow-ups missed' },
+        { n: '02', t: 'Paperwork on repeat', d: 'The same name and address retyped into three forms. Hours every week on data entry that should take minutes.', s: 'of staff time on admin' },
+        { n: '03', t: 'Information everywhere', d: 'Hunting through email, Drive, and someone\u2019s desktop for the \u201cfinal\u201d version, the night before an audit or board meeting.', s: 'of the week spent searching' }
+      ],
+      baSteps: steps,
+      baSummary: ba === 'before' ? '3 systems, 25+ minutes per client, and one sticky note between you and a missed renewal.' : 'Entered once. Filed, tracked, and followed up without anyone having to remember.',
+      baBeforeBg: ba === 'before' ? on.bg : off.bg, baBeforeFg: ba === 'before' ? on.fg : off.fg,
+      baAfterBg: ba === 'after' ? on.bg : off.bg, baAfterFg: ba === 'after' ? on.fg : off.fg,
+      showBefore: () => this.setState({ ba: 'before' }), showAfter: () => this.setState({ ba: 'after' }),
+      leaks: [['Retyping intake data', 9], ['Searching for files', 7], ['Manual reminder emails', 5], ['Reconciling spreadsheets', 4], ['Report data pulls', 3]].map(([t, h]) => ({ t, h: h + ' h', w: (h / 9 * 100) + '%' })),
+      followups: [
+        ['Henderson Foundation report', 'Denise', 'Fri', 'On track'], ['Donor thank-you · Ortiz', 'Marcus', 'Today', 'Sent'],
+        ['Intake signature · Lee', 'Front desk', 'Tue', 'Reminded'], ['Q2 county audit file', 'Denise', 'Jun 30', 'Ready'], ['Board packet draft', 'Priya', 'Thu', 'Due soon']
+      ].map(([t, o, d, st]) => ({ t, o, d, s: st, bg: st === 'Due soon' ? '#FEF3C7' : st === 'Reminded' ? '#E0F2FE' : '#DCFCE7', fg: st === 'Due soon' ? '#92400E' : st === 'Reminded' ? '#075985' : '#15803D' })),
+      staff: s.staff, hours: s.hours, cost: s.cost, org: s.org,
+      setStaff: e => this.setState({ staff: +e.target.value }), setHours: e => this.setState({ hours: +e.target.value }),
+      setCost: e => this.setState({ cost: Math.max(0, Math.min(500, +e.target.value || 0)) }), setOrg: e => this.setState({ org: e.target.value }),
+      hoursOut: Math.round(hrs).toLocaleString(), dollarsOut: fmt(dol),
+      paybackOut: pay ? `Pays for itself in ${pay} week${pay === 1 ? '' : 's'}` : 'Adjust inputs to see payback',
+      barPkg: dol > 0 ? Math.max(1.5, Math.min(100, 1000 / dol * 100)) + '%' : '100%',
+      weeksOut: Math.round(hrs / 40), orgCopy,
+      tier1: ['90-minute Workflow Discovery & Time-Leak Audit', 'Prioritized action plan (top 5 time leaks)', 'Shared drive cleanup + naming system for one team', 'Up to 3 paperwork automations, built and tested', 'Automatic follow-up system for one key process', '1 practical AI helper with privacy guardrails', '60-minute team training + recorded walkthrough', '30-day check-in call'],
+      tier2: ['Workflow redesign across up to 3 processes', 'Up to 10 automations', 'CRM / practice / property software integration', 'Reporting dashboard for leadership or board', 'Custom AI helpers (up to 3)', '2 training sessions + written SOPs', '60 days of email support'],
+      tier3: ['Monthly optimization sessions', 'New automations as needs change', 'Priority support', 'Quarterly impact report', 'Onboarding support for new hires'],
+      faqs, weeks,
+      tools: ['Google Workspace', 'Microsoft 365', 'Jotform', 'Zapier', 'Make', 'Power Automate', 'Slack', 'Teams', 'Outlook', 'Bloomerang', 'HubSpot', 'Salesforce NP', 'Clio', 'AppFolio', 'Buildium', 'Claude'],
+      care: ['We never ask you to share passwords by email', 'Sensitive client, patient, and donor data stays out of AI tools unless your policies allow it', 'Role-based access so staff see only what they need', 'HIPAA-aware workflows for healthcare clients [VERIFY]', 'Everything documented, so you\u2019re never dependent on us'],
+      footerCols: [
+        { h: 'Services', links: ['Starter Package', 'Steady Systems', 'Ongoing Partner', 'Free Workflow Review'] },
+        { h: 'Who We Help', links: ['Nonprofits', 'Professional-Service Firms', 'Property Management', 'Small Healthcare'] },
+        { h: 'Resources', links: ['Blog', 'Client Stories', 'Time Leaks Checklist', 'FAQ', 'Data Care Practices'] },
+        { h: 'Legal & Contact', links: ['Contact', 'Privacy Policy', 'Terms of Service', 'Accessibility Statement'] }
+      ]
+    };
+  }
+}
+</script>
+
+
+</body></html>
