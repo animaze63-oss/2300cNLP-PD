@@ -484,11 +484,14 @@
     Plotly.react('plot2d', clusterTraces(false), layout2, cfg);
     Plotly.react('plot3d', clusterTraces(true), layout3, Object.assign({}, cfg, { scrollZoom: true }));
 
+    if (!plotsBound) { plotsBound = true; bindPlotClicks(); }
+
     var r = lastPoints.ratio;
     $('var2d').textContent = 'variance shown: ' + ((r[0] + r[1]) * 100).toFixed(1) + '%';
     $('var3d').textContent = 'variance shown: ' + ((r[0] + r[1] + r[2]) * 100).toFixed(1) + '%';
   }
 
+  var plotsBound = false;
   function bindPlotClicks() {
     ['plot2d', 'plot3d'].forEach(function (id) {
       var el = $(id);
@@ -624,8 +627,6 @@
     });
 
     renderModelInfo(N * D);
-    bindPlotClicks();
-
     var init = initialQueries();
     if (init.length) { queries = init; active = 0; input.value = init[0]; update(); }
     else {

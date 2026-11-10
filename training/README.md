@@ -12,7 +12,7 @@ python3 training/train_word2vec.py --data-dir /tmp/w2v-data
 ```
 
 Options: `--top 30000` (words exported), `--epochs 5`, `--workers 4`.
-On 4 CPU cores training takes roughly 10 minutes. The corpus (~100 MB) is
+On 4 CPU cores training takes about 5 minutes (~1 min per epoch). The corpus (~100 MB) is
 stored in `--data-dir`; do not commit it.
 
 ## Corpus
