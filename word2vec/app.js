@@ -429,7 +429,7 @@
         customdata: own.map(function (p) { return [p.w, p.s.toFixed(3), q]; }),
         mode: 'markers+text', type: is3d ? 'scatter3d' : 'scatter',
         textposition: own.map(function (p) { return ax(p, 1) < ax(qp, 1) ? 'bottom center' : 'top center'; }),
-        textfont: { family: 'Inter, sans-serif', size: is3d ? 11 : 12, color: text },
+        textfont: { family: 'Inter, sans-serif', size: (is3d ? 11 : 12) - (queries.length > 2 ? 1 : 0), color: text },
         marker: { color: color, size: is3d ? 5 : 9, opacity: 0.95, line: { color: bg, width: is3d ? 0 : 1 } },
         hovertemplate: '<b>%{customdata[0]}</b><br>cos to “%{customdata[2]}”: %{customdata[1]}<extra></extra>',
         name: q, legendgroup: 'g' + k, showlegend: false
@@ -513,7 +513,8 @@
     sugEl.textContent = ''; sugSel = -1;
     if (!p) { closeSuggest(); return; }
     sugItems = prefixMatches(p, 8);
-    if (!sugItems.length || (sugItems.length === 1 && vocab[sugItems[0]] === p)) { closeSuggest(); return; }
+    // an exact vocabulary match closes the list so it never covers the Explore / Compare buttons
+    if (!sugItems.length || index.has(p)) { closeSuggest(); return; }
     sugItems.forEach(function (i, k) {
       var li = document.createElement('li');
       li.id = 'sug-' + k; li.setAttribute('role', 'option'); li.setAttribute('aria-selected', 'false');
@@ -594,7 +595,14 @@
     add('Vocabulary', N.toLocaleString() + ' words');
     add('Dimensions', D);
     var params = meta.params || {};
-    Object.keys(params).forEach(function (key) { add(key.replace(/_/g, ' '), params[key]); });
+    var LABELS = { sg: 'Architecture', vector_size: 'Vector size', window: 'Context window', min_count: 'Min word count',
+      negative: 'Negative samples', epochs: 'Epochs', alpha: 'Learning rate', sample: 'Downsampling' };
+    Object.keys(params).forEach(function (key) {
+      var v = params[key];
+      if (key === 'sg') v = Number(v) === 1 ? 'Skip-gram' : 'CBOW';
+      if (key === 'window') v = '±' + v + ' words';
+      add(LABELS[key] || key.replace(/_/g, ' '), v);
+    });
     add('Trained', meta.trained);
     add('Quantization', meta.quantization);
     add('Download', fmtMB(bytes));
