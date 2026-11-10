@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word2Vec Lab · Steadyline</title>
+  <meta name="description" content="Explore a Word2Vec embedding in your browser: nearest neighbours, cosine similarity, analogies, and 2D/3D PCA projections.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="preload" href="../assets/font-ffd81d19.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/font-7d091efb.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved theme before first paint (default: dark navy).
+    try { var t = localStorage.getItem('w2v-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#explorer">Skip to explorer</a>
+
+  <header class="site-header">
+    <div class="rainbow" aria-hidden="true"></div>
+    <div class="wrap header-row">
+      <a class="brand" href="/" aria-label="Steadyline home">
+        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sl-hdr" gradientUnits="userSpaceOnUse" x1="4" y1="6" x2="44" y2="42">
+              <stop offset="0" stop-color="#5EEAD4"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#A78BFA"/>
+            </linearGradient>
+          </defs>
+          <path d="M9 11 C17 11 17 24 25 24 M6 24 H25 M9 37 C17 37 17 24 25 24 M25 24 H35" stroke="url(#sl-hdr)" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="9" cy="11" r="3" fill="#5EEAD4"/><circle cx="6" cy="24" r="3" fill="#38BDF8"/><circle cx="9" cy="37" r="3" fill="#A78BFA"/><circle cx="40" cy="24" r="5" fill="#F59E0B"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Steadyline</span>
+          <span class="brand-sub">WORD2VEC LAB</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <a class="back-link" href="/"><span aria-hidden="true">&larr;</span> <span class="back-long">Back to </span>home</a>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <span class="ico-sun" aria-hidden="true">&#9728;</span><span class="ico-moon" aria-hidden="true">&#9790;</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="pill"><span class="dot" aria-hidden="true"></span> NLP class demo &middot; runs entirely in your browser</span>
+      <h1>Words as <span class="gtext">geometry</span>.</h1>
+      <p class="lede">Type a word to see its nearest neighbours in a trained Word2Vec space, then watch the neighbourhood flattened into 2D and 3D with principal component analysis.</p>
+    </section>
+
+    <!-- Loading / error state -->
+    <section id="loader" class="wrap loader-wrap" aria-live="polite">
+      <div class="card loader">
+        <div class="loader-head">
+          <span class="spinner" aria-hidden="true"></span>
+          <div>
+            <p class="loader-title" id="loaderTitle">Loading the model&hellip;</p>
+            <p class="loader-sub" id="loaderSub">Fetching vocabulary</p>
+          </div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Model download progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="app" class="wrap" hidden>
+      <!-- Explorer -->
+      <section id="explorer" class="grid-explore" aria-label="Nearest neighbour explorer">
+        <div class="col-left">
+          <div class="card">
+            <h2 class="card-title">Find similar words</h2>
+            <form id="searchForm" class="search" autocomplete="off" novalidate>
+              <label for="wordInput" class="sr-only">Word</label>
+              <div class="combo">
+                <input id="wordInput" type="text" inputmode="text" autocapitalize="none" spellcheck="false"
+                       placeholder="Try “king” or “river”" role="combobox" aria-autocomplete="list"
+                       aria-expanded="false" aria-controls="suggestList">
+                <ul id="suggestList" class="suggest" role="listbox" hidden></ul>
+              </div>
+              <div class="search-btns">
+                <button type="submit" class="btn btn-primary">Explore</button>
+                <button type="button" id="addBtn" class="btn btn-ghost" title="Add this word to the plots to compare clusters">+ Compare</button>
+              </div>
+            </form>
+            <p id="msg" class="msg" role="status" aria-live="polite"></p>
+            <div class="chips" id="exampleChips" aria-label="Example words"></div>
+            <div id="compareWrap" class="compare" hidden>
+              <p class="compare-label">Comparing</p>
+              <div class="chips" id="compareChips"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <h2 class="card-title">Nearest neighbours</h2>
+              <span class="hint">cosine similarity</span>
+            </div>
+            <div class="tabs" id="nbTabs" role="tablist" aria-label="Query word" hidden></div>
+            <ol id="neighbors" class="neighbors" aria-live="polite"></ol>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <div class="card plot-card">
+            <div class="card-head">
+              <h2 class="card-title">2D projection <span class="muted">(PCA)</span></h2>
+              <span class="hint" id="var2d"></span>
+            </div>
+            <div id="plot2d" class="plot plot-2d" role="img" aria-label="2D PCA scatter plot of the query word and its neighbours"></div>
+            <p class="plot-note">Click any point to explore that word. Lines connect each query to its 10 neighbours.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-second">
+        <div class="card plot-card">
+          <div class="card-head">
+            <h2 class="card-title">3D projection <span class="muted">(top 3 components)</span></h2>
+            <span class="hint" id="var3d"></span>
+          </div>
+          <div id="plot3d" class="plot plot-3d" role="img" aria-label="3D PCA scatter plot; drag to rotate, scroll or pinch to zoom"></div>
+          <p class="plot-note">Drag to rotate &middot; scroll or pinch to zoom &middot; double-click to reset.</p>
+        </div>
+
+        <div class="card analogy-card">
+          <h2 class="card-title">Analogies</h2>
+          <p class="card-sub"><em>a</em> is to <em>b</em> as <em>c</em> is to&nbsp;<strong>?</strong> &nbsp;&rarr;&nbsp; <code>b &minus; a + c</code></p>
+          <form id="analogyForm" class="analogy" autocomplete="off" novalidate>
+            <div class="analogy-row">
+              <label><span>a</span><input id="anA" type="text" autocapitalize="none" spellcheck="false" value="man"></label>
+              <span class="sep" aria-hidden="true">:</span>
+              <label><span>b</span><input id="anB" type="text" autocapitalize="none" spellcheck="false" value="king"></label>
+              <span class="sep" aria-hidden="true">::</span>
+              <label><span>c</span><input id="anC" type="text" autocapitalize="none" spellcheck="false" value="woman"></label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Solve</button>
+          </form>
+          <div class="chips" id="analogyChips" aria-label="Example analogies"></div>
+          <p id="anMsg" class="msg" role="status" aria-live="polite"></p>
+          <ol id="anResults" class="neighbors compact"></ol>
+        </div>
+      </section>
+
+      <!-- Explainer -->
+      <section class="explain" aria-labelledby="howTitle">
+        <h2 id="howTitle" class="section-title">What am I looking at?</h2>
+        <div class="explain-grid">
+          <article class="card exp">
+            <span class="exp-ico" style="--c:var(--s1)" aria-hidden="true">1</span>
+            <h3>Word2Vec</h3>
+            <p>Word2Vec learns a short list of numbers (a <em>vector</em>) for every word by training a tiny neural network to predict which words appear near each other. Words used in similar contexts &mdash; <em>doctor</em> and <em>nurse</em>, <em>paris</em> and <em>london</em> &mdash; end up with similar vectors. That is the distributional hypothesis: “you shall know a word by the company it keeps.”</p>
+          </article>
+          <article class="card exp">
+            <span class="exp-ico" style="--c:var(--s2)" aria-hidden="true">2</span>
+            <h3>Cosine similarity</h3>
+            <p>Similarity is the cosine of the angle between two vectors: <code>cos(u,v) = u&middot;v / (|u||v|)</code>. It is 1 when they point the same way, 0 when unrelated. Every vector here is pre-normalised to length 1, so the score is just a dot product &mdash; the page compares your word against the whole vocabulary in milliseconds.</p>
+          </article>
+          <article class="card exp">
+            <span class="exp-ico" style="--c:var(--s3)" aria-hidden="true">3</span>
+            <h3>PCA projection</h3>
+            <p>Vectors live in <span class="dim-n">100</span> dimensions, which we can't draw. Principal component analysis finds the directions along which the plotted words vary the most and projects onto them. The % on each axis is the share of that variance kept. It is a flattened view: always trust the neighbour list, which is computed in the full space.</p>
+          </article>
+        </div>
+
+        <div class="card model-card">
+          <h3>About this model</h3>
+          <dl id="modelInfo" class="model-info"></dl>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>Steadyline &middot; Word2Vec Lab</span>
+      <span class="muted">Charts by <a href="https://plotly.com/javascript/" rel="noopener">Plotly.js</a> (MIT). No data leaves your browser.</span>
+    </div>
+  </footer>
+
+  <script src="vendor/plotly-4.1.2.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
